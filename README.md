@@ -31,18 +31,16 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
 Follow the process described in the course to `eb init` a new application and `eb create` a new environment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
 
-## Stand Out (Optional)
+### Endpoint url for running beanstalk
+[http://udagramjaindev-dev2.ap-south-1.elasticbeanstalk.com](http://udagramjaindev-dev2.ap-south-1.elasticbeanstalk.com)
 
-### Refactor the course RESTapi
+#### example url
 
-If you're feeling up to it, refactor the course RESTapi to make a request to your newly provisioned image server.
+[http://udagramjaindev-dev2.ap-south-1.elasticbeanstalk.com/filteredimage?image_url=https://www.jacksonandperkins.com/images/xxl/v1780.jpg](http://udagramjaindev-dev2.ap-south-1.elasticbeanstalk.com/filteredimage?image_url=https://www.jacksonandperkins.com/images/xxl/v1780.jpg)
 
-### Authentication
+### Health Check Screenshot for eb deployement
 
-Prevent requests without valid authentication headers.
-> !!NOTE if you choose to submit this, make sure to add the token to the postman collection and export the postman collection file to your submission so we can review!
+<img width="1342" alt="Screenshot 2020-04-01 at 1 16 16 PM" src="https://user-images.githubusercontent.com/25522394/78114782-6b3a1c00-741f-11ea-95de-24ef96bfafe4.png">
 
-### Custom Domain Name
+<img width="1672" alt="Screenshot 2020-04-01 at 1 16 09 PM" src="https://user-images.githubusercontent.com/25522394/78114793-6ffed000-741f-11ea-8d9e-edbfcca2368e.png">
 
-Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
-> !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
