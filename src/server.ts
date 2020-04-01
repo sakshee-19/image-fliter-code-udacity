@@ -40,8 +40,8 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     }
     let filteredimage = await filterImageFromURL(image_url);
     res.sendFile(filteredimage);
-    // deleteLocalFiles();
-
+    deleteLocalFiles(image_url);
+    
   });
 
   // Displays a simple message to the user
